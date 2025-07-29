@@ -1,0 +1,67 @@
+.adding{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.502);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.what{
+    background-color: white;
+    min-height: 30vh;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+.inp{
+    border: none;
+    background-color: transparent;
+    width: 80%;
+}
+.inp:focus{
+    outline: none;
+}
+.inp.one{
+    margin-top: 30px;
+    font-size: 2rem;
+}
+.inp.two{
+    margin-top: 10px;
+    font-size: 1rem;
+    font-family: 'Inter';
+    height: 80px;
+    margin-bottom: 30px;
+}
+.what button{
+    font-family: 'Inter-bold';
+    background-color: transparent;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.completed{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    gap: 20px;
+    color: rgb(63, 63, 63);
+    font-family: 'Inter-bold';
+}
+.completed div{
+    font-size: 7rem;
+}
+.completed span{
+    width: 90%;
+    text-align: center;
+    margin-bottom: 30px;
+}

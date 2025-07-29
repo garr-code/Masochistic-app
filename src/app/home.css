@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('/Inter-Regular.ttf');
+}
+@font-face {
+  font-family: 'Inter-bold';
+  src: url('/Inter-Bold.ttf');
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    font-family: 'Inter';
+    height: 100vh;
+}
+.contained{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: auto;
+    margin-top: 5vh;
+    height: 90vh;
+}
+.title{
+    color: white;
+    font-family: 'Inter-bold';
+    font-size: 1.75rem;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+.input{
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.274);
+    display: flex;
+    align-items: center;
+}
+.plus{
+    height: 40px;
+    width: 40px;
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    font-family: 'Inter-bold';
+}
+.input span{
+    padding-left: 10px;
+    color: rgba(0, 0, 0, 0.599);
+}
+.tasker{
+    margin-top: 30px;
+    background-color: white;
+    flex-grow: 1;
+    border-radius: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.task{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1.25rem;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.task input{
+    width: 1.5em;
+    height: 1.5em;
+}
+.task input:checked{
+    accent-color: #0095FF;
+}
+.task input:checked ~ span{
+    text-decoration: line-through;
+    color: #979797;
+}
+@keyframes rotation{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.loading{
+    animation: rotation 0.5s ease-in infinite;
+}
