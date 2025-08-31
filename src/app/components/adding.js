@@ -40,7 +40,7 @@ export default function Adding({setAdding, adding}){
                 <div className="completed">
                     {error ?
                         <span style={{color: 'red'}}>
-                            There has been an error!<br/> Try again.
+                            C'è stato un errore!<br/> Riprova.
                         </span>
                         :
                         <>
@@ -52,10 +52,10 @@ export default function Adding({setAdding, adding}){
                     }
                 </div> : 
                 <>
-                    <input placeholder="What to fail..." className="inp one" maxLength={30} onChange={(e)=>{
+                    <input placeholder="Cosa fallire..." className="inp one" maxLength={30} onChange={(e)=>{
                         setInp1(e.target.value)
                     }}/>
-                    <textarea placeholder="A short desciption of your task..." className="inp two" maxLength={200} onChange={(e)=>{
+                    <textarea placeholder="Una breve descrizione del tuo futuro fallimento..." className="inp two" maxLength={200} onChange={(e)=>{
                         setInp2(e.target.value)
                     }}/>
                     <button onClick={async ()=>{
@@ -73,7 +73,7 @@ export default function Adding({setAdding, adding}){
                                 setError(true)
                             }
                         }
-                    }}>{loading? "Loading..." : "Add it"}</button>
+                    }}>{loading? "Caricando..." : "Aggiungi"}</button>
                 </>
                 }
             </div>

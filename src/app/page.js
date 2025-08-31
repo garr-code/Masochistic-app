@@ -31,12 +31,11 @@ export default function Home() {
       {adding && <Adding setAdding={setAdding} adding={adding}/>}
       {checked && <Checked data={checkdata} setChecked={setChecked}/>}
       <div className="contained">
-        <span className="title">What you will fail today?</span>
+        <span className="title">TaskFail</span>
         <div className="input" onClick={()=>{
           setAdding(true)
         }}>
-          <div className="plus">+</div>
-          <span>Add a task (you won’t do that)</span>
+          <span>Aggiungi una task (fallirai)</span>
         </div>
         <div className="tasker" style={loading? {display: 'flex', justifyContent: 'center', alignItems: 'center'} : {}}>
           {loading? <Image src={'/loading.svg'} width={50} height={50} alt='The loading png' className='loading'/> :

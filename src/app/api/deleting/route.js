@@ -41,6 +41,7 @@ export async function POST(req) {
                           Response: “She probably forgot you exist”
 
                         Only return the insult. Nothing else.
+                        The insult MUST to be in italian.
               `},
             { role: "user", content: `Task Title: ${body.title}\nTask Description: ${body.description}\nGive the insult:` }
           ],

@@ -34,6 +34,7 @@ export async function POST(req) {
                 - You're adorable when you lie  
 
                 Only return the insult. No context or explanation. No emojies. No quotes or punctuation.
+                The insult MUST to be in italian.
 
               `},
             { role: "user", content: `Task Title: ${body.title}\nTask Description: ${body.description}\nGive the insult:` }
